@@ -56,10 +56,7 @@
       "executor": "@nx/angular:module-federation-dev-server",
       "options": {
         "port": 4200,
-        "publicHost": "https://localhost:4200",
-        "ssl": true,
-        "sslKey": "././certificate/localhost.key",
-        "sslCert": "././certificate/localhost.crt"
+        "ssl": true
       },
       "configurations": {
         "production": {

@@ -56,10 +56,10 @@
       "executor": "@nx/angular:webpack-dev-server",
       "options": {
         "port": 4202,
-        "publicHost": "https://localhost:4202",
+        "host": "https://localhost",
         "ssl": true,
-        "sslKey": "././certificate/localhost.key",
-        "sslCert": "././certificate/localhost.crt"
+        "sslKey": "./certificate/localhost.key",
+        "sslCert": "./certificate/localhost.crt"
       },
       "configurations": {
         "production": {
@@ -104,7 +104,10 @@
       "options": {
         "buildTarget": "cart:build",
         "port": 4202,
-        "watch": false
+        "watch": false,
+        "ssl": true,
+        "sslKey": "./certificate/localhost.key",
+        "sslCert": "./certificate/localhost.crt"
       },
       "configurations": {
         "development": {
